@@ -1,0 +1,25 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {join,relative} from 'node:path';
+import {createHash} from 'node:crypto';
+import {placeFraming,chunkData,readPlace,matchSources,buildDossier} from '../vendor/makefun-roblox.ts';
+const root=process.cwd();
+const data=readFileSync(join(root,'game.rbxl'));
+const framing=placeFraming(data);
+let end=32, total=0;
+const chunks=framing.chunks.map(c=>{if(c.offset!==end+16) throw Error('Noncontiguous chunk'); const decoded=chunkData(data,c); if(decoded.length!==c.uncompressedLength) throw Error('Decompression length mismatch'); end=c.offset+(c.compressedLength||c.uncompressedLength); total+=c.uncompressedLength; return {name:c.name,offset:c.offset,compressed:c.compressedLength,uncompressed:c.uncompressedLength};});
+if(end!==data.length || chunks.at(-1)?.name!=='END') throw Error('Bad EOF');
+if(data.length>32*1024*1024||total>256*1024*1024) throw Error('Place cap');
+const place=readPlace(data,{max_instances:500000,scripts_max_source_bytes:8388608,scripts_max_path_chars:1048576});
+function walk(dir:string): string[]{return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(dir,e.name)):[join(dir,e.name)]);}
+const sources=walk(join(root,'src')).filter(p=>/\.luau?$/.test(p)).map(p=>({path:relative(join(root,'src'),p),bytes:readFileSync(p)}));
+const match=matchSources(place,sources);
+if(match.coverage!==1 || match.unmatched.length) throw Error('Sources do not match');
+const caps={text_max_bytes:65536,screenshots:{max:4,max_bytes:262144},max_instances:500000,scripts_max_source_bytes:8388608,scripts_max_path_chars:1048576};
+const dossierRoot=process.env.DOSSIER_FIXTURE_DIR || root;
+const dossier=buildDossier(dossierRoot,caps); const repeat=buildDossier(dossierRoot,caps);
+if(!Buffer.from(dossier).equals(Buffer.from(repeat))) throw Error('Nondeterministic dossier');
+if(dossier.length>1.5*1024*1024) throw Error('Dossier cap');
+writeFileSync(join(root,'verification/dossier-draft.json'),dossier);
+const report={sha256:createHash('sha256').update(data).digest('hex'),placeBytes:data.length,uncompressedBytes:total,exactEOF:true,chunks,instances:place.instances,scripts:place.scripts.map(s=>({path:s.path,bytes:s.source?.length})),sourceMatch:match,dossierBytes:dossier.length,dossierDeterministic:true,dossierUsesStructuralFixtures:dossierRoot!==root,notes:place.notes,screenshots:readdirSync(join(root,'screenshots')).filter((n:string)=>!n.startsWith('.')),publicPlace:'PENDING: PLAY.json intentionally template zeros'};
+writeFileSync(join(root,'verification/binary-check.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify({placeBytes:data.length,chunks:chunks.length,exactEOF:true,scripts:place.scripts.length,coverage:match.coverage,dossierBytes:dossier.length,notes:place.notes},null,2));

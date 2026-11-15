@@ -1,0 +1,1 @@
+{"name":"neon-vault-spectrum-heist","private":true,"type":"module","scripts":{"verify":"node tools/verify-binary.ts"}}

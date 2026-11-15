@@ -1,0 +1,138 @@
+[
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/client/UIFactory.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 2 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/client/VaultClient.client.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 17 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/server/VaultServer.server.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 3 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/EnemyCatalog.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 0 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/GameConfig.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 2 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/GameMath.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 1 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-compile",
+      "--null",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/VaultSimulation.luau"
+    ],
+    "exit": 0,
+    "output": "Compiled 0 KLOC into 13 KB bytecode (read 0.00s, parse 0.00s, compile 0.00s)\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau-analyze",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/client/UIFactory.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/client/VaultClient.client.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/server/VaultServer.server.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/EnemyCatalog.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/GameConfig.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/GameMath.luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/src/shared/VaultSimulation.luau"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/tests/simulation.luau"
+    ],
+    "exit": 0,
+    "output": "PASS 46 assertions; full five-vault headless campaign, defeat, restart, steal, upgrades, Titan patterns\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/luau",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/tests/balance.luau"
+    ],
+    "exit": 0,
+    "output": "seed\t1\tVictory\tcleared\t5\thull\t160\ttime\t66\nseed\t2\tVictory\tcleared\t5\thull\t160\ttime\t70\nseed\t3\tVictory\tcleared\t5\thull\t138\ttime\t67\nseed\t4\tVictory\tcleared\t5\thull\t160\ttime\t66\nseed\t5\tVictory\tcleared\t5\thull\t160\ttime\t64\nseed\t6\tVictory\tcleared\t5\thull\t160\ttime\t70\nseed\t7\tVictory\tcleared\t5\thull\t160\ttime\t69\nseed\t8\tVictory\tcleared\t5\thull\t160\ttime\t69\nseed\t9\tVictory\tcleared\t5\thull\t160\ttime\t67\nseed\t10\tVictory\tcleared\t5\thull\t160\ttime\t65\nOrbit input bot wins\t10\tof 10; no invulnerability, no HP or shard injection\n"
+  },
+  {
+    "command": [
+      "python3",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/tools/test-client.py"
+    ],
+    "exit": 0,
+    "output": "PASS client source smoke: initial select, combat, Titan, victory, defeat, return select, render/input tick\n\n"
+  },
+  {
+    "command": [
+      "/home/hatch/workspace/bug-hunting/tools/bin/rojo",
+      "build",
+      "default.project.json",
+      "--output",
+      "game.rbxl"
+    ],
+    "exit": 0,
+    "output": "Building project 'neon-vault'\nBuilt project to game.rbxl\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/verify-binary.ts"
+    ],
+    "exit": 0,
+    "output": "{\n  \"placeBytes\": 20557,\n  \"chunks\": 44,\n  \"exactEOF\": true,\n  \"scripts\": 7,\n  \"coverage\": 1,\n  \"dossierBytes\": 49903,\n  \"notes\": []\n}\n"
+  },
+  {
+    "command": [
+      "node",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/verification/packaging-fixture/main.ts"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "node",
+      "/home/hatch/workspace/makefun/roblox-neon-vault/verification/packaging-fixture/main.ts"
+    ],
+    "exit": 0,
+    "output": ""
+  }
+]

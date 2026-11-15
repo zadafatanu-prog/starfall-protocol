@@ -1,0 +1,1 @@
+PASS client source smoke: initial select, combat, Titan, victory, defeat, return select, render/input tick

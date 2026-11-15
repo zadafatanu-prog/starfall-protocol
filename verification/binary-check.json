@@ -1,0 +1,361 @@
+{
+  "sha256": "1e61ccd9b42cc64f0328da39d4a191764074b4ce74cb5f4e64f5a80b9e9b62ee",
+  "placeBytes": 20557,
+  "uncompressedBytes": 35882,
+  "exactEOF": true,
+  "chunks": [
+    {
+      "name": "INST",
+      "offset": 48,
+      "compressed": 29,
+      "uncompressed": 31
+    },
+    {
+      "name": "INST",
+      "offset": 93,
+      "compressed": 28,
+      "uncompressed": 26
+    },
+    {
+      "name": "INST",
+      "offset": 137,
+      "compressed": 30,
+      "uncompressed": 28
+    },
+    {
+      "name": "INST",
+      "offset": 183,
+      "compressed": 34,
+      "uncompressed": 45
+    },
+    {
+      "name": "INST",
+      "offset": 233,
+      "compressed": 23,
+      "uncompressed": 21
+    },
+    {
+      "name": "INST",
+      "offset": 272,
+      "compressed": 27,
+      "uncompressed": 25
+    },
+    {
+      "name": "INST",
+      "offset": 315,
+      "compressed": 37,
+      "uncompressed": 35
+    },
+    {
+      "name": "INST",
+      "offset": 368,
+      "compressed": 25,
+      "uncompressed": 23
+    },
+    {
+      "name": "INST",
+      "offset": 409,
+      "compressed": 38,
+      "uncompressed": 37
+    },
+    {
+      "name": "INST",
+      "offset": 463,
+      "compressed": 32,
+      "uncompressed": 30
+    },
+    {
+      "name": "INST",
+      "offset": 511,
+      "compressed": 33,
+      "uncompressed": 31
+    },
+    {
+      "name": "INST",
+      "offset": 560,
+      "compressed": 39,
+      "uncompressed": 37
+    },
+    {
+      "name": "INST",
+      "offset": 615,
+      "compressed": 29,
+      "uncompressed": 27
+    },
+    {
+      "name": "PROP",
+      "offset": 660,
+      "compressed": 49,
+      "uncompressed": 53
+    },
+    {
+      "name": "PROP",
+      "offset": 725,
+      "compressed": 30,
+      "uncompressed": 28
+    },
+    {
+      "name": "PROP",
+      "offset": 771,
+      "compressed": 25,
+      "uncompressed": 23
+    },
+    {
+      "name": "PROP",
+      "offset": 812,
+      "compressed": 25,
+      "uncompressed": 23
+    },
+    {
+      "name": "PROP",
+      "offset": 853,
+      "compressed": 27,
+      "uncompressed": 25
+    },
+    {
+      "name": "PROP",
+      "offset": 896,
+      "compressed": 20,
+      "uncompressed": 18
+    },
+    {
+      "name": "PROP",
+      "offset": 932,
+      "compressed": 25,
+      "uncompressed": 23
+    },
+    {
+      "name": "PROP",
+      "offset": 973,
+      "compressed": 30,
+      "uncompressed": 28
+    },
+    {
+      "name": "PROP",
+      "offset": 1019,
+      "compressed": 7220,
+      "uncompressed": 13248
+    },
+    {
+      "name": "PROP",
+      "offset": 8255,
+      "compressed": 86,
+      "uncompressed": 87
+    },
+    {
+      "name": "PROP",
+      "offset": 8357,
+      "compressed": 9373,
+      "uncompressed": 17631
+    },
+    {
+      "name": "PROP",
+      "offset": 17746,
+      "compressed": 20,
+      "uncompressed": 18
+    },
+    {
+      "name": "PROP",
+      "offset": 17782,
+      "compressed": 24,
+      "uncompressed": 23
+    },
+    {
+      "name": "PROP",
+      "offset": 17822,
+      "compressed": 18,
+      "uncompressed": 16
+    },
+    {
+      "name": "PROP",
+      "offset": 17856,
+      "compressed": 28,
+      "uncompressed": 26
+    },
+    {
+      "name": "PROP",
+      "offset": 17900,
+      "compressed": 27,
+      "uncompressed": 25
+    },
+    {
+      "name": "PROP",
+      "offset": 17943,
+      "compressed": 30,
+      "uncompressed": 28
+    },
+    {
+      "name": "PROP",
+      "offset": 17989,
+      "compressed": 26,
+      "uncompressed": 24
+    },
+    {
+      "name": "PROP",
+      "offset": 18031,
+      "compressed": 35,
+      "uncompressed": 34
+    },
+    {
+      "name": "PROP",
+      "offset": 18082,
+      "compressed": 30,
+      "uncompressed": 28
+    },
+    {
+      "name": "PROP",
+      "offset": 18128,
+      "compressed": 25,
+      "uncompressed": 23
+    },
+    {
+      "name": "PROP",
+      "offset": 18169,
+      "compressed": 1965,
+      "uncompressed": 3668
+    },
+    {
+      "name": "PROP",
+      "offset": 20150,
+      "compressed": 38,
+      "uncompressed": 36
+    },
+    {
+      "name": "PROP",
+      "offset": 20204,
+      "compressed": 31,
+      "uncompressed": 29
+    },
+    {
+      "name": "PROP",
+      "offset": 20251,
+      "compressed": 35,
+      "uncompressed": 33
+    },
+    {
+      "name": "PROP",
+      "offset": 20302,
+      "compressed": 32,
+      "uncompressed": 30
+    },
+    {
+      "name": "PROP",
+      "offset": 20350,
+      "compressed": 39,
+      "uncompressed": 37
+    },
+    {
+      "name": "PROP",
+      "offset": 20405,
+      "compressed": 28,
+      "uncompressed": 26
+    },
+    {
+      "name": "PROP",
+      "offset": 20449,
+      "compressed": 31,
+      "uncompressed": 29
+    },
+    {
+      "name": "PRNT",
+      "offset": 20496,
+      "compressed": 36,
+      "uncompressed": 157
+    },
+    {
+      "name": "END",
+      "offset": 20548,
+      "compressed": 0,
+      "uncompressed": 9
+    }
+  ],
+  "instances": 19,
+  "scripts": [
+    {
+      "path": "ReplicatedStorage.Shared.EnemyCatalog",
+      "bytes": 584
+    },
+    {
+      "path": "ReplicatedStorage.Shared.GameConfig",
+      "bytes": 1464
+    },
+    {
+      "path": "ReplicatedStorage.Shared.GameMath",
+      "bytes": 1072
+    },
+    {
+      "path": "ReplicatedStorage.Shared.VaultSimulation",
+      "bytes": 11775
+    },
+    {
+      "path": "ServerScriptService.VaultServer.VaultServer",
+      "bytes": 3649
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.VaultClient.UIFactory",
+      "bytes": 2701
+    },
+    {
+      "path": "StarterPlayer.StarterPlayerScripts.VaultClient.VaultClient",
+      "bytes": 13229
+    }
+  ],
+  "sourceMatch": {
+    "matched": [
+      {
+        "file": "client/UIFactory.luau",
+        "script": "StarterPlayer.StarterPlayerScripts.VaultClient.UIFactory",
+        "class": "ModuleScript"
+      },
+      {
+        "file": "client/VaultClient.client.luau",
+        "script": "StarterPlayer.StarterPlayerScripts.VaultClient.VaultClient",
+        "class": "LocalScript"
+      },
+      {
+        "file": "server/VaultServer.server.luau",
+        "script": "ServerScriptService.VaultServer.VaultServer",
+        "class": "Script"
+      },
+      {
+        "file": "shared/EnemyCatalog.luau",
+        "script": "ReplicatedStorage.Shared.EnemyCatalog",
+        "class": "ModuleScript"
+      },
+      {
+        "file": "shared/GameConfig.luau",
+        "script": "ReplicatedStorage.Shared.GameConfig",
+        "class": "ModuleScript"
+      },
+      {
+        "file": "shared/GameMath.luau",
+        "script": "ReplicatedStorage.Shared.GameMath",
+        "class": "ModuleScript"
+      },
+      {
+        "file": "shared/VaultSimulation.luau",
+        "script": "ReplicatedStorage.Shared.VaultSimulation",
+        "class": "ModuleScript"
+      }
+    ],
+    "unmatched": [],
+    "scriptMatched": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scriptBytes": 34474,
+    "coveredBytes": 34474,
+    "coverage": 1
+  },
+  "dossierBytes": 49903,
+  "dossierDeterministic": true,
+  "dossierUsesStructuralFixtures": true,
+  "notes": [],
+  "screenshots": [],
+  "publicPlace": "PENDING: PLAY.json intentionally template zeros"
+}

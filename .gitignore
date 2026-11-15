@@ -1,0 +1,6 @@
+out/
+verification/packaging-fixture/
+verification/client-smoke.generated.luau
+verification/dossier-draft.json
+verification/analyze-raw.txt
+
